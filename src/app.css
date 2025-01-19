@@ -1,0 +1,41 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.light {
+    --bg-1: 255, 255, 255;
+    --border-1: 242, 242, 242;
+    --border-2: 0, 0, 0;
+    --text: 0, 0, 0;
+}
+
+.dark {
+    --bg-1: 17, 17, 17;
+    --border-1: 38, 38, 38;
+    --border-2: 242, 242, 242;
+    --text: 255, 255, 255;
+}
+
+:root {
+    font-size: 15px;
+}
+
+.light ::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark ::selection {
+    background-color: #fff;
+    color: #000;
+}
+
+* {
+    color: #eee;
+}
+
+html,
+body {
+    height: 100%;
+    /* background-color: #111111; */
+}
