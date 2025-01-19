@@ -2,6 +2,6 @@
     let { title = "Title" } = $props()
 </script>
 
-<h2 class="text-xl text-text font-semibold capitalize mb-4">
+<h2 class="text-2xl text-text font-semibold capitalize">
     {title}
 </h2>

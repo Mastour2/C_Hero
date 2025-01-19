@@ -2,7 +2,22 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
 .light {
+    --baseOne: 255, 255, 255;
+    --baseTow: ;
+    --baseThree: 0, 0, 0;
+
+    --baseTextOne: 0, 0, 0;
+
+
+    --baseBorderOne: 242, 242, 242;
+    --baseBorderTow: 0, 0, 0;
+
+
     --bg-1: 255, 255, 255;
     --border-1: 242, 242, 242;
     --border-2: 0, 0, 0;
@@ -10,6 +25,16 @@
 }
 
 .dark {
+    --baseOne: 17, 17, 17;
+    --baseTow: ;
+    --baseThree: ;
+
+    --baseBorderOne: 38, 38, 38;
+    --baseBorderTow: 242, 242, 242;
+
+    --baseTextOne: 255, 255, 255;
+
+
     --bg-1: 17, 17, 17;
     --border-1: 38, 38, 38;
     --border-2: 242, 242, 242;
@@ -17,7 +42,7 @@
 }
 
 :root {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .light ::selection {
@@ -32,10 +57,16 @@
 
 * {
     color: #eee;
+    font-family: "Nunito Sans", serif;
+}
+
+*:focus {
+    outline: none;
 }
 
 html,
 body {
     height: 100%;
+    background-color: rgba(var(--bg-1), 1);
     /* background-color: #111111; */
 }
